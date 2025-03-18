@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WeenieIconBuilder" GeneratedClassName="WeenieIconBuilder">
+  <Profiles />
+  <Settings>
+    <Setting Name="mysql_host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="mysql_port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="mysql_user" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="mysql_pass" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mysql_dbname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ace_world</Value>
+    </Setting>
+    <Setting Name="portal_dat_path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\ace\client_portal.dat</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
