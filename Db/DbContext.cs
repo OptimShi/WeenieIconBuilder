@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
-//using WeenieIconBuilder.Properties;
 
 namespace WeenieIconBuilder.Db
 {

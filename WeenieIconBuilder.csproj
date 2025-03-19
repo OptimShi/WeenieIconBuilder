@@ -9,7 +9,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ACE.Common\**" />
+    <Compile Remove="ACE.DatLoader\**" />
+    <Compile Remove="ACE.Entity\**" />
+    <EmbeddedResource Remove="ACE.Common\**" />
+    <EmbeddedResource Remove="ACE.DatLoader\**" />
+    <EmbeddedResource Remove="ACE.Entity\**" />
+    <None Remove="ACE.Common\**" />
+    <None Remove="ACE.DatLoader\**" />
+    <None Remove="ACE.Entity\**" />
+    <Page Remove="ACE.Common\**" />
+    <Page Remove="ACE.DatLoader\**" />
+    <Page Remove="ACE.Entity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ACE.Common\ACE.Common.csproj" />
+    <ProjectReference Include="ACE.DatLoader\ACE.DatLoader.csproj" />
+    <ProjectReference Include="ACE.Entity\ACE.Entity.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WeenieIconBuilder" GeneratedClassName="WeenieIconBuilder">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WeenieIconBuilder" GeneratedClassName="WeenieIconBuilderSettings">
   <Profiles />
   <Settings>
     <Setting Name="mysql_host" Type="System.String" Scope="User">
@@ -18,7 +18,7 @@
       <Value Profile="(Default)">ace_world</Value>
     </Setting>
     <Setting Name="portal_dat_path" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:\ace\client_portal.dat</Value>
+      <Value Profile="(Default)">c:\ace\</Value>
     </Setting>
   </Settings>
 </SettingsFile>

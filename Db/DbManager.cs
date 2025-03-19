@@ -63,8 +63,6 @@ namespace WeenieIconBuilder.Db
 
         public void LoadAllWeenies()
         {
-            
-
             string sql = "SELECT * FROM `weenie` order by `class_Id` ASC;";
             
             using (var reader = db.GetReader(sql))

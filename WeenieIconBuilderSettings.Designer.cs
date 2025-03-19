@@ -85,7 +85,7 @@ namespace WeenieIconBuilder {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("c:\\ace\\client_portal.dat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\ace\\")]
         public string portal_dat_path {
             get {
                 return ((string)(this["portal_dat_path"]));
