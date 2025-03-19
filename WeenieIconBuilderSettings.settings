@@ -20,5 +20,8 @@
     <Setting Name="portal_dat_path" Type="System.String" Scope="User">
       <Value Profile="(Default)">c:\ace\</Value>
     </Setting>
+    <Setting Name="image_path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\ace\icons\</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

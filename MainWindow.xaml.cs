@@ -4,6 +4,9 @@ using System.Text;
 using System.Windows;
 using WeenieIconBuilder.Db;
 using ACE.DatLoader;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Windows.Media.Imaging;
 
 namespace WeenieIconBuilder
 {
@@ -15,11 +18,11 @@ namespace WeenieIconBuilder
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         private void btnLoadIcons_Click(object sender, RoutedEventArgs e)
         {
+            string iconDir = WeenieIconBuilderSettings.Default.image_path;
 
             LoadDATs(WeenieIconBuilderSettings.Default.portal_dat_path);
 
@@ -34,7 +37,7 @@ namespace WeenieIconBuilder
             catch (Exception)
             {
                 // Somethign went wrong.
-
+                MessageBox.Show("There was an error connecting to your database.");
             }
 
             if (connected)
@@ -42,12 +45,16 @@ namespace WeenieIconBuilder
                 foreach(var weenie in db.Weenies)
                 {
                     var w = weenie.Value;
-                    IconData iconData = IconData.GenerateFromWeenie(w); ;
-                    
+                    var wcid = weenie.Key;
+                    string filename = Path.Combine(iconDir, wcid + ".png");
+                    if (!File.Exists(filename))
+                    {
+                        IconData iconData = IconData.GenerateFromWeenie(w); ;
 
+                        Bitmap icon = IconBuilder.BuildIcon(iconData);
+                        icon.Save(filename, ImageFormat.Png);
+                    }
                 }
-                // Generate Icons
-               // db.LoadAllWeenies();
             }
         }
 
